@@ -1,0 +1,87 @@
+@CHARSET "ISO-8859-1";
+
+html{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width:100%;
+	margin: 5% 5%;
+	font-family: 'Bitter', serif;
+}
+
+header,section,article,aside,footer{
+	display: block;
+}
+
+header {
+	padding-botttom:5px;
+	width:100%;
+	!background-color:grey;
+}
+
+#header_title {
+	color: 	#4169E1;
+	font-family: 'Lobster', cursive;
+	font-size: 45px;
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+aside {
+	float:left;
+	width:20%;
+}
+
+section {
+	float:right;
+	width:80%;
+	margin: 0 0 10px 0px;
+	!background-color:yellow;
+	padding-top:2%;
+	padding-left:2%;
+	padding-bottom:2%;
+	font-size:14px;
+	
+}
+
+footer {
+	clear:both;
+}
+
+input#gobutton{
+	cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+	padding:5px 25px; /*add some padding to the inside of the button*/
+	background:#35b128; /*the colour of the button*/
+	border:1px solid #33842a; /*required or the default border for the browser will appear*/
+	/*give the button curved corners, alter the size as required*/
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/*give the button a drop shadow*/
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	box-shadow: 0 0 4px rgba(0,0,0, .75);
+	/*style the text*/
+	color:#f3f3f3;
+	font-size:1.1em;
+}
+
+input#gobutton:hover, input#gobutton:focus{
+	background-color :#399630; /*make the background a little darker*/
+	/*reduce the drop shadow size to give a pushed button effect*/
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+	box-shadow: 0 0 1px rgba(0,0,0, .75);
+}
+
+.input_char {
+	height:25px;
+	line-height:25px;
+	font-size:14px;
+	font-family: 'Bitter', serif;
+}
+
+.wwFormTable {
+	border-spacing:8px;
+}
